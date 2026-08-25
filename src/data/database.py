@@ -18,7 +18,8 @@ CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY,
     username text NOT NULL,
     role text NOT NULL,
-    password_hash text NOT NULL
+    password_hash INT NOT NULL,
+    salt text NOT NULL
 );
 '''
 CREATE_VENUES = '''
