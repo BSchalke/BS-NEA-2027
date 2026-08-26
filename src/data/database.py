@@ -81,30 +81,45 @@ def load_database(): #Creates the database and tables if it does not already exi
 
     print("Database successfully loaded")
 
+#Executes any SQL query passed in, with error handling
+def execute_query(query:str):
+    try:
+        with sqlite3.connect(DB_PATH) as conn:
+            cursor = conn.cursor()
+            execute = cursor.execute(query)
+            return execute
+    except Exception as e:
+        raise e
+
 #Write a new record to a table in the database
 def write_record(table:str, **data:str): #Uses **kwargs to take in all the data needed for the record with column names and values
     #Splits the data into columns and values, formating each one as a tuple
     columns = str(tuple(data.keys()))
     values = str(tuple(data.values()))
-
-    try:
-        with sqlite3.connect(DB_PATH) as conn:
-            cursor = conn.cursor()
-            cursor.execute(f'''
+    execute_query(f'''
             INSERT INTO {table}{columns}
             VALUES{values};
             ''')
-    except Exception:
-        raise Exception("Invalid table name or column name")
 
 #Removes a specific record or group of records based on an identifier using a WHERE statement
 def remove_record(table:str, id_name:str, id_value):
-    try:
-        with sqlite3.connect(DB_PATH) as conn:
-            cursor = conn.cursor()
-            cursor.execute(f'''
+    execute_query(f'''
             DELETE FROM {table}
             WHERE {id_name} = {id_value};
             ''')
-    except Exception:
-        raise Exception("Invalid table name or column name")
+
+def edit_record(table:str, id_name:str, id_value, column_name:str, new_value):
+    execute_query(f'''
+            UPDATE {table}
+            SET {column_name} = {new_value}
+            WHERE {id_name} = {id_value};
+            ''')
+
+def read_record(table:str, id_name:str, id_value):
+    result = list(execute_query(f'''
+            SELECT *
+            FROM {table}
+            WHERE {id_name} = "{id_value}";
+            '''))
+
+    return result
