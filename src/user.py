@@ -19,23 +19,25 @@ def myhash(plaintext, salt_size = 16, repeats = 1000, salt = None):
     return state, salt
 
 #Creates a user account and stores data in users table in database
-def create_account(username, password, role):
+def create_account(username, password):
     exists = len(database.read_record("users", "username", username))
 
+    #If there is no existing user with that username, a new account is created
     if not exists:
         password_hash, salt = myhash(password)
-        database.write_record("users", username=username, password_hash=password_hash, salt=salt, role=role)
+        database.write_record("users", username=username, password_hash=password_hash, salt=salt)
     else:
         raise Exception("Username already exists")
 
+#Verifies a user to be logged in, returns True or False if they can be logged in
 def login(username, password):
     user_data = database.read_record("users", "username", username)
     exists = len(user_data)
     user_data = user_data[0]
 
     if exists:
-        entered_password_hash = myhash(password, salt=user_data[4])[0]
-        if entered_password_hash == user_data[3]:
+        entered_password_hash = myhash(password, salt=user_data[3])[0] #Given password is hashed with the salt stored in the database record
+        if entered_password_hash == user_data[2]: #If hash matches the hash stored in the database
             return True
         else:
             return False

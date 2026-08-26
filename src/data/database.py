@@ -17,7 +17,6 @@ CREATE_USERS = '''
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY,
     username text NOT NULL,
-    role text NOT NULL,
     password_hash INT NOT NULL,
     salt text NOT NULL
 );
@@ -26,7 +25,9 @@ CREATE_VENUES = '''
 CREATE TABLE IF NOT EXISTS venues (
     id INTEGER PRIMARY KEY,
     name text NOT NULL,
-    capacity INT NOT NULL
+    capacity INT NOT NULL,
+    lat_coord REAL NOT NULL,
+    long_coord REAL NOT NULL
 );
 '''
 CREATE_ARTISTUSERS = '''
@@ -108,6 +109,7 @@ def remove_record(table:str, id_name:str, id_value):
             WHERE {id_name} = {id_value};
             ''')
 
+#Allows a specific value in a record to be ammended
 def edit_record(table:str, id_name:str, id_value, column_name:str, new_value):
     execute_query(f'''
             UPDATE {table}
@@ -115,6 +117,7 @@ def edit_record(table:str, id_name:str, id_value, column_name:str, new_value):
             WHERE {id_name} = {id_value};
             ''')
 
+#Reads and existing record and returns
 def read_record(table:str, id_name:str, id_value):
     result = list(execute_query(f'''
             SELECT *
