@@ -1,4 +1,4 @@
 from data import database
 import login
 
-print(login.myhash("mypassword", salt='2gY2DTwDCREI2ebh'))
+login.create_account("test", 12345, "abc", "unassigned")

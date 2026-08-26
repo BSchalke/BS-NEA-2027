@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS eventArtists (
     event_id INT NOT NULL,
     FOREIGN KEY (artist_id) REFERENCES artists (id) ON DELETE CASCADE ON UPDATE CASCADE
     FOREIGN KEY (event_id) REFERENCES events (id) ON DELETE CASCADE ON UPDATE CASCADE
-)
+);
 '''
 
 def load_database(): #Creates the database and tables if it does not already exist
@@ -81,3 +81,30 @@ def load_database(): #Creates the database and tables if it does not already exi
 
     print("Database successfully loaded")
 
+#Write a new record to a table in the database
+def write_record(table:str, **data:str): #Uses **kwargs to take in all the data needed for the record with column names and values
+    #Splits the data into columns and values, formating each one as a tuple
+    columns = str(tuple(data.keys()))
+    values = str(tuple(data.values()))
+
+    try:
+        with sqlite3.connect(DB_PATH) as conn:
+            cursor = conn.cursor()
+            cursor.execute(f'''
+            INSERT INTO {table}{columns}
+            VALUES{values};
+            ''')
+    except Exception:
+        raise Exception("Invalid table name or column name")
+
+#Removes a specific record or group of records based on an identifier using a WHERE statement
+def remove_record(table:str, id_name:str, id_value):
+    try:
+        with sqlite3.connect(DB_PATH) as conn:
+            cursor = conn.cursor()
+            cursor.execute(f'''
+            DELETE FROM {table}
+            WHERE {id_name} = {id_value};
+            ''')
+    except Exception:
+        raise Exception("Invalid table name or column name")
