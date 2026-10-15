@@ -1,0 +1,137 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="c7hK08VHIj8r9CV8Q6Mg">
+    <mxGraphModel dx="2054" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FooEV4qVuThmBCM-0xpf-3" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Start" vertex="1">
+          <mxGeometry height="30" width="80" x="424" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-5" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Load window with visuals buttons and empty stage plan" vertex="1">
+          <mxGeometry height="60" width="120" x="404" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-7" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-6" value="Component image selected">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-10" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-9" value="Mouse click on window">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-27" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-26" value="Undo button clicked">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-33" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FooEV4qVuThmBCM-0xpf-34" value="Export as image">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="315" />
+              <mxPoint x="570" y="560" />
+            </Array>
+            <mxPoint x="490" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Wait for user interaction" vertex="1">
+          <mxGeometry height="90" width="86" x="421" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-25" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="464" y="450" />
+              <mxPoint x="360" y="450" />
+              <mxPoint x="360" y="292.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Store the image ID of the image selected in a variable for current selection" vertex="1">
+          <mxGeometry height="60" width="120" x="404" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-14" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Get coordinates of mouse click" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-15" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-4" value="Not in bounds">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="122.5" y="400" />
+              <mxPoint x="122.5" y="210" />
+              <mxPoint x="464" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-17" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-16" value="In bounds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Check if coordinates are in bounds for the stage plan on screen" vertex="1">
+          <mxGeometry height="130" width="135" x="142.5" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-18" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-4" value="No selection">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="550" />
+              <mxPoint x="90" y="200" />
+              <mxPoint x="464" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-20" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-19" value="Selection">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-16" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Check if there is a current selection" vertex="1">
+          <mxGeometry height="100" width="100" x="160" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-23" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Place image of selection on coordinates of mouse click" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-24" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="820" />
+              <mxPoint x="50" y="820" />
+              <mxPoint x="50" y="190" />
+              <mxPoint x="464" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Add action ID to stack, as well as to the element added on screen" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-31" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pop the item at the top of the action stack and read its ID" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-32" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="FooEV4qVuThmBCM-0xpf-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="415" />
+              <mxPoint x="620" y="415" />
+              <mxPoint x="620" y="292.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Find the image element with the same action ID and remove it from the plan" vertex="1">
+          <mxGeometry height="60" width="135" x="632.5" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-36" edge="1" parent="1" source="FooEV4qVuThmBCM-0xpf-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="FooEV4qVuThmBCM-0xpf-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Stage plan with images of components saved as an image file to a folder" vertex="1">
+          <mxGeometry height="90" width="135" x="389" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="FooEV4qVuThmBCM-0xpf-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="End" vertex="1">
+          <mxGeometry height="30" width="80" x="416.5" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
