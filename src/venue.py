@@ -1,5 +1,11 @@
 from data import database
 
+class Venue:
+    def __init__(self, id, name):
+        self.__id = id
+        self.__name = name
+        self.__capacity = database.read_record("venues", "id", id)[0][2]
+
 def create_venue(name:str, capacity:int, lat_coord:float, long_coord:float):
     exists = len(database.read_record("venues", "name", name))
 

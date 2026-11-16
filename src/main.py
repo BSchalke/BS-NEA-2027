@@ -1,13 +1,27 @@
 from data import database
 import user, venue, artist
 
-#database.load_database()
-#user.create_account("Ben", "ThisIsAPassword!")
-print(user.login("Ben", "ThisIsAPassword!"))
+database.load_database()
+try:
+    user.create_account("Ben", "ThisIsAPassword!")
+    user.create_account("test_user", "12345")
+except Exception:
+    pass
 
-#venue.create_venue("New Cross Inn", 250, 1.23, 2.34)
-venue.link_user(1, 1)
+current_user = user.load_user("Ben")
+print(current_user.get_status())
+current_user.login("ThisIsAPassword!")
+print(current_user.get_status())
 
-#artist.create_artist("Gutalax", 4)
-#artist.create_artist("Party Cannon", 5)
-artist.link_user(1, 2)
+"""
+password1 = "hello123"
+password2 = "different456"
+test_salt = "ExampleSalt12345"
+
+hash1, _ = user.myhash(password1, salt=test_salt)
+hash2, _ = user.myhash(password2, salt=test_salt)
+
+print("Hash 1:", hash1)
+print("Hash 2:", hash2)
+print("Collision:", hash1 == hash2)
+"""

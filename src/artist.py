@@ -1,5 +1,11 @@
 from data import database
 
+class Artist:
+    def __init__(self, id, name):
+        self.__id = id
+        self.__name = name
+        self.__nomembers = database.read_record("artists", "id", id)[0][2]
+
 def create_artist(name:str, no_members:int):
     exists = len(database.read_record("artists", "name", name))
     

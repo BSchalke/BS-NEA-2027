@@ -106,7 +106,7 @@ def write_record(table:str, **data:str): #Uses **kwargs to take in all the data 
 def remove_record(table:str, id_name:str, id_value):
     execute_query(f'''
             DELETE FROM {table}
-            WHERE {id_name} = {id_value};
+            WHERE {id_name} = "{id_value}";
             ''')
 
 #Allows a specific value in a record to be ammended
