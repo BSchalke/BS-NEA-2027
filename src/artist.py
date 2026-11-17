@@ -4,7 +4,26 @@ class Artist:
     def __init__(self, id, name):
         self.__id = id
         self.__name = name
-        self.__nomembers = database.read_record("artists", "id", id)[0][2]
+
+    def get_id(self):
+        return self.__id
+
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, new_name):
+        self.__name = new_name
+
+class Band(Artist):
+    def __init__(self, id, name, no_members):
+        super().__init__(id, name)
+        self.__no_members = no_members
+
+    def get_no_members(self):
+        return self.__no_members
+
+    def set_no_members(self, new_number):
+        self.__no_members = new_number
 
 def create_artist(name:str, no_members:int):
     exists = len(database.read_record("artists", "name", name))
